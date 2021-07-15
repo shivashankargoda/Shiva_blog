@@ -1,0 +1,299 @@
+<html>
+
+	<head>
+		<title>BLOGS</title>
+		
+	<style>
+		body{
+		background-image: url("background_img.jpg");
+		background-repeat: no-repeat;
+  background-size: cover;
+		
+			margin:auto;
+		}
+		
+		
+		
+			.topnav {
+  overflow: hidden;
+  position:relative;
+  top:20px;
+}
+
+.topnav a {
+  float: right;
+  color: #000;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+
+
+
+
+
+.topnav a:hover {
+  background-color: #21094e;
+  color: #fea82f;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+	
+	
+	
+
+.contact a{
+color:orange;
+text-decoration:none;
+text-align:center;
+font-size:40px;
+
+}
+
+
+
+.about{
+text-align:center;
+
+color:black;;
+font-size:20px;
+word-spacing:5px;
+
+}
+
+
+	
+		
+		
+		
+		
+		
+		
+		
+		.blog1{
+			height:auto;
+			width:auto;;
+			background:#440a67;
+			padding:10px 20px;
+			margin:40px;
+			display:inline-block;
+		
+		}
+	
+	
+
+	#content{
+	height:auto;
+	padding:10px;
+	width:95%;
+	background:white;
+	color:#000;
+	letter-spacing:2px;
+	line-height:40px;
+	
+	
+	}
+	
+	summary{
+	
+	color:white;
+	cursor:pointer;
+	padding:5px;
+	font-size:23px;
+	}
+	summary:hover{
+		color:white;
+		background:orange;
+		font-size:30px;
+		padding:10px;
+	
+	}
+	
+	
+	li{
+	
+	cursor:pointer;
+	background:white;
+	color:black;
+	padding:5px;
+		font-size:20px;
+
+	
+	
+	}
+	li:hover {
+	color:white;
+	background:green;
+		padding:10px;
+	
+	
+	}
+	
+	
+	.line:hover{
+	background:white;
+	padding:20px
+	color:red;
+	}
+
+	mark{
+	color: #3d84b8;
+	background:#ffb26b;
+	
+	
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	</style>
+		
+	</head>
+	
+	<body>
+	
+	
+	
+<div class="topnav">
+  <a href="#"onclick="myFunction_about()" >About</a>
+  <a href="#" onclick="myFunction_contact()">Contact</a>
+
+  <a href="index.html" > Home </a>
+</div>
+	
+	
+
+	
+<script>
+      function myFunction_about() {
+        document.getElementById("content").innerHTML = ' <center> <span class= "about"> Name : BHANU PRASAD KOMMULA  </br></br> currently pursuing my final year in the stream of computer science.<br> <br> I am very passionate about learning latest technologies and am good at <b><br><br>  Python, C, Java, SQL, HTML, CSS, JavaScript, AWS, DevOps, Data Science, Machine Learning, and Computeer Vision</b> </span> </center> ';
+      }	
+</script>
+
+
+
+	
+<script>
+      function myFunction_contact() {
+        document.getElementById("content").innerHTML = ' <center> <span class= "contact">BHANU PRASAD KOMMULA </br></br> <a href="tel:8341033324">Click To Call Me</a> <br><br>     <a href = "mailto: bhanu.beings26@gmail.com">Send Email</a> <br> </br>  </span> <center> ';
+      }	
+</script>
+
+
+
+
+
+	
+	
+		<h1 style="font-size:60px;"> <center><span style="color:green"> TECHNICAL</span><span style="color:green"> BLOGS</span> </center> </h1>
+		
+	
+
+
+	<h1 class="line" style="color:#290149; font-size:30px; padding-left:28px;">Please select your topic from the above and the relevant content will be displayed down here for you to read. </h1>
+
+
+	<div class="blog1" >
+		<details>
+			<summary> Docker </summary>
+			<ul>
+        <li onclick="myFunction_doc_ins()">Installation of Docker in Ubuntu</li>
+        <li onclick="myFunction_doc_basicCmd()">Basic Docker Commands</li>
+        <li>Creating Your Own Docker Images</li>
+		</ul>
+	</details>
+		
+		</div>
+	
+	
+	<div class="blog1" >
+		<details>
+			<summary> Jenkins </summary>
+			<ul>
+              <li onclick="">COMMING SOON .. STAY TUNED!!!!</li>
+			</ul>
+	</details>
+		
+		</div>
+	
+	
+	
+	<div class="blog1" >
+		<details>
+			<summary> GIT </summary>
+			<ul>
+        <li onclick="">COMMING SOON .. STAY TUNED!!!!</li>
+        
+		</ul>
+	</details>
+		
+		</div>
+		
+		
+		<div class="blog1" >
+		<details>
+			<summary> Kubernetes </summary>
+			<ul>
+        <li onclick="">COMMING SOON .. STAY TUNED!!!!</li>
+        
+		</ul>
+	</details>
+		
+		</div>
+
+
+		
+
+	
+    <p id="content" ></p>
+	
+	
+	
+	
+	
+    <script>
+      function myFunction_doc_ins() {
+        document.getElementById("content").innerHTML = '<div class="doc_ins"> <h1> The following are the commands that are used for the installation of Docker on ubuntu.</h1> <h2>Before installing specific software it\'s a best practise to check wheather the software is preinstalled in the machine or not and this can be done easily by type the 	name of the  tool or software. In our case we type  the command <mark style="color: #3d84b8; background:#ffb26b;"> docker or  docker --version </mark>. If we get any description or version of the tool or software then its preinstalled and if the output of the command is <mark style="color: #3d84b8; background:#ffb26b;">command not found </mark> then it\'s not installed and we have to install it.<br> <h3> Snap shows the output when software is installed </h3> <br> </h2> </div>  <img src= "docker_cmd_s.png" alt="docker_cmd_succes" height= "450px" width="650px"> <img src= "docker --v_cmd_s.png" alt="docker--v_cmd_success" height= "450px" width="750px"> <br> <h3> Snap shows the output when software is not installed </h3>.<br> <img src="docker_cmd_F.png" alt="docker_smd_fail" height="400px" width="700px"> ';
+  
+  }
+	  </script>
+	  
+	  
+	  <script>
+	 
+	 
+      function myFunction_doc_basicCmd() {
+        document.getElementById("content").innerHTML = '<h1>Hello Dear Visitor!</br> CONTENT COMMMMIIIIINNNNNNGGGGGG <img src= "blog_images\docker_cmd_s.png" height= "250px" width="250px"> SOOOOOOOONNNNN STAY TUNED!!!!!!!!!!!!! thank you </h1>';
+      }
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
